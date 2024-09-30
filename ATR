@@ -1,0 +1,4 @@
+import pandas_ta as ta
+def ATR(data):
+    data['ATR'] = ta.atr(data['high'], data['low'], data['close'], length= 14)
+    return data
